@@ -15,9 +15,8 @@ import 'chartjs-plugin-datalabels';
   styleUrls: ['./cities.component.scss']
 })
 export class CitiesComponent implements OnInit {
+  breakpoint: number;
   
-
-
   cities = [];
 
 
@@ -25,6 +24,11 @@ export class CitiesComponent implements OnInit {
 
   ngOnInit() {
     this.initLoad();
+    this.breakpoint = (window.innerWidth <= 800 ? 5000 : 700);
+  }
+
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 800) ? 5000 : 700;
   }
 
   initLoad() {
@@ -47,6 +51,7 @@ export class CitiesComponent implements OnInit {
               }]
     },
     options: {
+      responsive: true,
         plugins: {
           datalabels: {
             align: 'end',

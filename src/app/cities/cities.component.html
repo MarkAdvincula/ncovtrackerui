@@ -1,5 +1,5 @@
   <div>
-    <canvas #canvas id="canvas" width="600" height="700">{{ cities }}</canvas>
+    <canvas #canvas id="canvas" width="600" [height]="breakpoint" (window:resize)="onResize($event)">{{ cities }}</canvas>
   </div>
 
 

@@ -13,8 +13,8 @@ export class CitiesService {
 
   constructor(private _http: HttpClient) { }
 
-  apiURL = 'http://18.182.11.198:4000'
-  //http://18.182.11.198
+  apiURL = 'http://3.115.230.216:4000'
+  //http://3.115.230.216/
 
   httpOptions = {
     headers: new HttpHeaders({

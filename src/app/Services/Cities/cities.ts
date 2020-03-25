@@ -5,7 +5,7 @@ export class Cities{
     geometryType: string;
     spatialReference: SpatialReference;
     fields: Fields[];
-    features: Features;
+    features: Features[];
 }
 
 export class UniqueIdField{
@@ -28,7 +28,7 @@ export class Fields{
 }
 
 export class Features{
-    attributes: Attributes[]
+    attributes: Attributes;
 }
 
 export class Attributes{

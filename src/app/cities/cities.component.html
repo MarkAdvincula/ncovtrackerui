@@ -1,4 +1,11 @@
-<mat-grid-list cols="5" rowHeight="2.5:1">
+  <div>
+    <canvas #canvas id="canvas" width="600" height="700">{{ cities }}</canvas>
+  </div>
+
+
+
+
+<!-- <mat-grid-list [cols]="breakpoint" rowHeight="2.5:1" (window:resize)="onResize($event)">
   <mat-grid-tile *ngFor="let city of features">
     <mat-card class="example-card">
       <mat-card-header>
@@ -8,5 +15,5 @@
       <mat-card-content>Confirmed: {{city.attributes.value}}</mat-card-content>
     </mat-card>
   </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
 

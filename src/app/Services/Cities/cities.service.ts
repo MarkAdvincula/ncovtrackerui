@@ -13,7 +13,7 @@ export class CitiesService {
 
   constructor(private _http: HttpClient) { }
 
-  apiURL = 'http://localhost:4000'
+  apiURL = 'http://18.182.11.198:4000'
   //http://18.182.11.198
 
   httpOptions = {

@@ -24,11 +24,11 @@ export class CitiesComponent implements OnInit {
 
   ngOnInit() {
     this.initLoad();
-    this.breakpoint = (window.innerWidth <= 800 ? 5000 : 700);
+    this.breakpoint = (window.innerWidth <= 1400 ? 5000 : 700);
   }
 
   onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= 800) ? 5000 : 700;
+    this.breakpoint = (event.target.innerWidth <= 1400) ? 5000 : 700;
   }
 
   initLoad() {
